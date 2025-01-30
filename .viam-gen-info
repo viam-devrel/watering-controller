@@ -1,0 +1,12 @@
+{
+  "module_name": "watering-controller",
+  "namespace": "devrel",
+  "language": "python",
+  "resource_type": "service",
+  "resource_subtype": "generic",
+  "model_name": "plant-watering",
+  "enable_cloud_build": true,
+  "initialize_git": false,
+  "generator_version": "0.1.0",
+  "generated_on": "2025-01-30T18:25:47.901074Z"
+}

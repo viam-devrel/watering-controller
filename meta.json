@@ -1,0 +1,26 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "devrel:watering-controller",
+  "visibility": "public",
+  "url": "https://github.com/viam-devrel/watering-controller",
+  "description": "Modular generic service: plant-watering",
+  "models": [
+    {
+      "api": "rdk:service:generic",
+      "model": "devrel:watering-controller:plant-watering",
+      "short_description": "Automate a water pump for plant care using a digital sensor value.",
+      "markdown_link": "README.md#model-devrelwatering-controllerplant-watering"
+    }
+  ],
+  "entrypoint": "dist/main",
+  "first_run": "",
+  "build": {
+    "build": "./build.sh",
+    "setup": "./setup.sh",
+    "path": "dist/archive.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64"
+    ]
+  }
+}
