@@ -92,8 +92,9 @@ class PlantWatering(Generic, EasyResource):
 
         should_water = await sensor.get()
         LOGGER.info(f"Should water? {should_water}")
-        await relay.set(await sensor.get())
+        await relay.set(should_water)
 
+        await asyncio.sleep(1)
         LOGGER.info(f"Currently watering? {await relay.get()}")
         await asyncio.sleep(1)
 
