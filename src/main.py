@@ -94,8 +94,8 @@ class PlantWatering(Generic, EasyResource):
         LOGGER.info(f"Should water? {should_water}")
         await relay.set(should_water)
 
-        await asyncio.sleep(1)
-        LOGGER.info(f"Currently watering? {await relay.get()}")
+        LOGGER.info(f"Currently watering? {should_water}")
+
         await asyncio.sleep(1)
 
     async def do_command(
